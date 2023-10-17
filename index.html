@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bestermind" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Restaurant.css">
+    <title>Gerícht</title>
+</head>
+
+<body>
+    <header>
+        <h1> GER&Iacute;CHT </h1>
+        <nav class="desktopnav">
+            <ul class="main-items">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Pages</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Landing</a></li>
+            </ul>
+            <ul class="logreg">
+                <li><a href="#" id="log">Log In / Registration</a></li>
+                <img src="./images/login-registartion-line.png" alt="">
+                <li><a href="#" id="booktable">Book Table</a></li>
+            </ul>
+        </nav>
+        <nav class="mobilenav">
+            <ul class="menu" id="mainmenu">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"
+                        fill="#DCCA87">
+                        <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg>
+                </li>
+            </ul>
+            <ul class="menuitems" id="menu-items">
+                <li class="close-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35"
+                        fill="#DCCA87" id="close">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M200-160v-320H80l400-360 160 144v-104h120v212l120 108H760v320H520v-240h-80v240H200Zm80-80h80v-240h240v240h80v-312L480-732 280-552v312Zm80-240h240-240Zm40-79h160q0-32-24-52.5T480-632q-32 0-56 20.5T400-559Z" />
+                    </svg></li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M480-160q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740v484q51-32 107-48t113-16q36 0 70.5 6t69.5 18v-480q15 5 29.5 10.5T898-752q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm80-200v-380l200-200v400L560-360Zm-160 65v-396q-33-14-68.5-21.5T260-720q-37 0-72 7t-68 21v397q35-13 69.5-19t70.5-6q36 0 70.5 6t69.5 19Zm0 0v-396 396Z" />
+                    </svg>
+                </li>
+
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M160-40v-80h640v80H160Zm0-800v-80h640v80H160Zm320 400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm70-80q45-56 109-88t141-32q77 0 141 32t109 88h70v-480H160v480h70Zm118 0h264q-29-20-62.5-30T480-280q-36 0-69.5 10T348-240Zm132-280q-17 0-28.5-11.5T440-560q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560q0 17-11.5 28.5T480-520Zm0 40Z" />
+                    </svg></li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M280-280h84l240-238-86-86-238 238v86Zm352-266 42-44q6-6 6-14t-6-14l-56-56q-6-6-14-6t-14 6l-44 42 86 86ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm280-590q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z" />
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M754-324 120-500v-220l60 20 28 84 192 54v-318l80 20 110 350 200 56q23 6 36.5 24.5T840-388q0 33-27 53t-59 11ZM120-120v-80h720v80H120Z" />
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                        fill="#DCCA87">
+                        <path
+                            d="M400-400h160v-80H400v80Zm0-120h320v-80H400v80Zm0-120h320v-80H400v80Zm-80 400q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <i class="fa fa-home"></i>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <i class="fa fa-table" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i> -->
+    <main>
+        <section class="Hero">
+            <div class="content">
+                <h5>Chase The New Flavour</h5>
+                <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                        fill="#DCCA87" />
+                </svg>
+                <h2>The Key To Fine Dining</h2>
+                <p>Sit tellus lobortis sed senectus vivamus molestie. <br>
+                    Condimentum volutpat morbi facilisis quam scelerisque <br>
+                    sapien. Et, penatibus aliquam amet tellus
+                </p>
+                <button id="btn-content">Explore Menu</button>
+            </div>
+            <div class="content-img">
+                <img src="./images/Hero img.png" alt="">
+            </div>
+        </section>
+
+        <div class="slider">
+            <span>01</span>
+            <img src="./images/slider.png" alt="">
+            <span>02</span>
+            <span>03</span>
+            <span>04</span>
+        </div>
+        <div class="scroll">
+            <img src="./images/scroll.png" alt="">
+            <p>Scroll</p>
+        </div>
+
+        <div class="hashtags">
+            <p>#Bar</p>
+            <p>#Gericht</p>
+        </div>
+        <section class="about">
+            <div class="about-us">
+                <h5>About Us</h5>
+                <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                        fill="#DCCA87" />
+                </svg>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quis <br> pharetra adipiscing ultrices vulputate posuere tristique.
+                    In sed <br> odio nec aliquet eu proin mauris et.
+                </p>
+                <button id="abtus-btn">Know More</button>
+            </div>
+            <img src="./icons/G.svg" alt="" id="g">
+            <img src="./images/savernake-knives-f4jl2ezowuM-unsplash 2.png" alt="" id="knife">
+            <div class="our-history">
+                <h5>Our History</h5>
+                <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                        fill="#DCCA87" />
+                </svg>
+                <p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. <br>
+                    Risus placerat morbi volutpat
+                    habitasse interdum mi aliquam In <br> sed odio nec aliquet.
+                </p>
+                <button id="ourhist-btn">Know More</button>
+            </div>
+        </section>
+        <section class="Drinkmenu">
+            <h5>Menu that fits you palatte</h5>
+            <img src="./icons/spoon.svg" alt="" id="menusvg">
+
+            <h2>Today’s Special</h2>
+            <div class="drinks">
+                <div class="wine-beer">
+                    <ul class="winebeer">
+                        <h3>Wine & Beer</h3>
+                        <li>Chapel Hill Shiraz</li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$56</h6>
+                        <p>AU | Bottle</p>
+
+                        <li> Catena Malbec </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$59</h6>
+                        <p>AR | Bottle</p>
+
+                        <li> La Vieille Rosé </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$44</h6>
+                        <p>FR | 750 ml</p>
+
+                        <li> Rhino Pale Ale</li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$31</h6>
+                        <p>CA | 750 ml</p>
+
+                        <li> Irish Guinness </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$26</h6>
+                        <p>IE | 750 ml</p>
+
+                    </ul>
+                    <img src="./images/cocktail-beer-wine.png" alt="" id="centerimg">
+                </div>
+                <div class="cocktail">
+                    <ul class="cocktail-items">
+                        <h3>Cocktails</h3>
+                        <li> Aperol Spritz</li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$28</h6>
+                        <p>Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+
+                        <li> Dark 'N' Stormy </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$16</h6>
+                        <p>Dark rum | Ginger beer | Slice of lime.</p>
+
+                        <li> Daiquiri </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$10</h6>
+                        <p>Rum | Citrus juice | Sugar</p>
+
+                        <li> Old Fashioned </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$31</h6>
+                        <p>Bourbon | Brown sugar | Angostura Bitters</p>
+
+                        <li> Negroni </li>
+                        <svg width="119" height="2" viewBox="0 0 119 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="119" height="1" fill="#FAFAFA" />
+                        </svg>
+                        <h6>$26</h6>
+                        <p>Gin | Sweet Vermouth | Campari | Orange garnish</p>
+
+                    </ul>
+                </div>
+            </div>
+            <button>View</button>
+        </section>
+
+        <section class="chef">
+            <img src="./images/chef.png" alt="">
+            <div class="the-chef">
+                <h6>Chef's Word</h6>
+                <svg id="chef-spoon" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                        fill="#DCCA87" />
+                </svg>
+                <h2>What we believe in</h2>
+                <p>
+                    <svg width="25" height="20" viewBox="0 0 47 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9137 23.3571C15.3163 23.3571 17.2183 24.1592 18.6198 25.7632C20.1214 27.2669 20.8722 29.2719 20.8722 31.7782C20.8722 34.485 19.9712 36.6404 18.1693 38.2444C16.4675 39.7481 14.115 40.5 11.1118 40.5C7.60809 40.5 4.85517 39.1466 2.85304 36.4399C0.951012 33.7331 0 29.8734 0 24.8609C0 20.3496 1.00107 16.1892 3.00319 12.3797C5.00533 8.46992 8.00852 4.56015 12.0128 0.650374C12.1129 0.550125 12.263 0.5 12.4633 0.5C12.7636 0.5 13.0138 0.650374 13.2141 0.951122C13.4143 1.25188 13.4143 1.5025 13.2141 1.703C8.30884 6.71553 5.85623 12.6303 5.85623 19.4474C5.85623 22.2544 6.35676 24.3095 7.35783 25.6128C8.25879 24.109 10.1108 23.3571 12.9137 23.3571ZM39.0415 23.3571C41.4441 23.3571 43.3461 24.1592 44.7476 25.7632C46.2492 27.2669 47 29.2719 47 31.7782C47 34.485 46.099 36.6404 44.2971 38.2444C42.5953 39.7481 40.2428 40.5 37.2396 40.5C33.7359 40.5 30.983 39.1466 28.9808 36.4399C27.0788 33.7331 26.1278 29.8734 26.1278 24.8609C26.1278 20.3496 27.1289 16.1892 29.131 12.3797C31.1331 8.46992 34.1363 4.56015 38.1406 0.650374C38.2407 0.550125 38.3908 0.5 38.5911 0.5C38.8914 0.5 39.1416 0.650374 39.3419 0.951122C39.5421 1.25188 39.5421 1.5025 39.3419 1.703C34.4366 6.71553 31.984 12.6303 31.984 19.4474C31.984 22.2544 32.4846 24.3095 33.4856 25.6128C34.3866 24.109 36.2386 23.3571 39.0415 23.3571Z"
+                            fill="white" />
+                    </svg>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. <br>
+                    auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla <br> scelerisque
+                    scelerisque
+                    congue ac consequat, aliquam molestie lectus eu. <br> Congue iaculis integer curabitur semper sit
+                    nunc.
+                </p>
+                <h5>Kevin Luo</h5>
+                <span>Chef & Founder</span>
+                <p id="signature">Kevin Luo</p>
+            </div>
+        </section>
+        <section class="video">
+            <img src="./images/videoimg.png" alt="" id="background">
+        </section>
+        <section class="awd">
+            <section class="awards">
+                <div class="double-spoon">
+                    <img src="./images/double-spoon.png" alt="">
+                </div>
+                <div class="award-recognition">
+                    <h5>Awards & recognition</h5>
+                    <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                            fill="#DCCA87" />
+                    </svg>
+
+                    <h2>Our Laurels</h2>
+                </div>
+                <ul class="first">
+                    <img src="./images/awards-2.png" alt="">
+                    <li>
+                        <h5>Bib Gourmond</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </li>
+
+                    <img src="./images/awards-1.png" alt="">
+                    <li>
+                        <h5>Rising Star</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </li>
+                </ul>
+                <ul class="second-stage">
+                    <img src="./images/awards-5.png" alt="" id="fifth">
+                    <li>
+                        <h5>AA Hospitality</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </li>
+
+                    <img src="./images/awards-3.png" alt="">
+                    <li>
+                        <h5>AA Hospitality</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </li>
+                </ul>
+                <div class="aside-img">
+                    <img src="./images/awards-side.png" alt="">
+                </div>
+            </section>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="gallery-writeup">
+                <h5>Instagram</h5>
+                <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                        fill="#DCCA87" />
+                </svg>
+                <h2>Photo Gallery</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                    Volutpat mattis ipsum turpis elit elit
+                    scelerisque egestas mu.
+                </p>
+                <button id="btn-gallery">View More</button>
+            </div>
+            <div class="gallery">
+                <img src="./images/1.png" alt="">
+                <img src="./images/2.png" alt="">
+                <img src="./images/3.png" alt="">
+                <img src="./images/5.png" alt="">
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-writeup">
+                <h5>Contact</h5>
+                <img src="./images/spoon.png" alt="">
+                <h2>Find Us</h2>
+                <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+                <span>Opening Hours</span>
+                <ul>
+                    <li>
+                        Mon - Fri: 10:00 am - 02:00 am
+                    </li>
+                    <li>
+                        Sat - Sun: 10:00 am - 03:00 am
+                    </li>
+                </ul>
+                <button id="contact-btn">Visit Us</button>
+            </div>
+            <div class="contact-img">
+                <img src="./images/find-us.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="newsletter">
+            <h6>NewsLetter</h6>
+            <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                    fill="#DCCA87" />
+            </svg>
+
+            <h1>Subscribe to Our Newsletter</h1>
+            <p>And never miss latest Updates!</p>
+            <label for="email">
+                <input type="email" placeholder="Email Address">
+                <button>Subscribe</button>
+            </label>
+        </section>
+        <div class="footer-slider">
+            <img src="./images/scroll.png" alt="">
+            <p>Top</p>
+        </div>
+        <section class="footer-items">
+            <section class="contact-us">
+                <h4>Contact Us</h4>
+                <p>9 W 53rd St, New York, NY 10019, USA</p>
+                <ul>
+                    <li>+1 212-344-1230 </li>
+                    <li>+1 212-555-1230</li>
+                </ul>
+            </section>
+            <section class="socials">
+                <h1>GER&Iacute;CHT</h1>
+                <p>"The best way to find yourself is to lose
+                    yourself in the service of others.”
+                </p>
+                <svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M33.5014 9.5C37.0847 9.5 39.9998 7.48129 39.9998 4.99995C39.9998 2.51861 37.0847 0.5 33.5014 0.5C30.112 0.5 27.3219 2.30637 27.0298 4.6018H22.3527V3.6552L-0.000213623 3.6552V6.34446L22.3528 6.34446V5.39798H27.0299C27.3221 7.69352 30.112 9.5 33.5014 9.5ZM21.4896 5.54839L0.863079 5.54839V4.45161H21.4896V5.54839ZM27.866 4.99995C27.866 2.95778 30.3942 1.2964 33.5015 1.2964C36.6088 1.2964 39.137 2.95778 39.137 4.99995C39.137 7.04222 36.6088 8.7037 33.5015 8.7037C30.3942 8.7037 27.866 7.04222 27.866 4.99995Z"
+                        fill="#DCCA87" />
+                </svg>
+
+                <ul>
+                    <li>
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg fill="#F5EFDB" width="20px" height="20px" viewBox="0 0 1920 1920"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m1416.013 791.915-30.91 225.617h-371.252v789.66H788.234v-789.66H449.808V791.915h338.426V585.137c0-286.871 176.207-472.329 449.09-472.329 116.87 0 189.744 6.205 231.822 11.845l-3.272 213.66-173.5.338c-4.737-.451-117.771-9.25-199.332 65.655-52.568 48.169-79.191 117.433-79.191 205.65v181.96h402.162Zm-247.276-304.018c44.446-41.401 113.71-36.889 118.787-36.663l289.467-.113 6.204-417.504-43.544-10.717C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l61.932-451.233H1126.66v-69.152c0-54.937 14.214-96 42.078-122.058Z"
+                                fill-rule="evenodd" />
+                        </svg>
+                    </li>
+                    <li>
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg fill="#F5EFDB" width="20px" height="20px" viewBox="0 0 1920 1920"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1920 311.856c-70.701 33.769-146.598 56.47-226.221 66.86 81.317-52.517 143.774-135.529 173.252-234.691-76.236 48.678-160.716 84.028-250.391 103.002-71.718-82.56-174.268-134.06-287.435-134.06-217.75 0-394.165 189.966-394.165 424.206 0 33.318 3.614 65.619 10.165 96.678C617.9 616.119 327.304 447.385 133.045 190.67c-33.77 62.57-53.309 135.53-53.309 213.233 0 147.162 91.031 276.818 196.744 353.054-64.602-2.26-157.101-21.46-157.101-53.309v5.648c0 205.327 114.41 376.658 294.55 415.849-32.978 9.487-78.38 14.795-114.409 14.795-25.412 0-55.454-2.71-79.624-7.793 50.26 168.509 193.13 291.163 365.478 294.777-134.852 113.506-306.07 181.383-490.616 181.383-31.85 0-64.038-2.033-94.758-5.873 174.494 120.17 381.176 190.532 603.67 190.532 724.97 0 1121.055-646.136 1121.055-1206.55 0-18.41-.452-36.932-1.356-55.116 77.026-59.746 143.887-134.4 196.631-219.444"
+                                fill-rule="evenodd" />
+                        </svg>
+                    </li>
+                    <li>
+                        <?xml version="1.0" ?>
+                        <svg fill="#F5EFDB" width="20px" height="20px" viewBox="0 0 32 32" id="Camada_1" version="1.1"
+                            xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <g>
+
+                                <path
+                                    d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z" />
+
+                                <path
+                                    d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8   c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z" />
+
+                                <path
+                                    d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8   c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z" />
+
+                            </g>
+
+                        </svg>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="working-hours">
+                <h4>Working Hours</h4>
+                <ul>
+                    <li>
+                        Monday-Friday:
+                    </li>
+                    <li>
+                        08:00 am -12:00am
+                    </li>
+                    <li>
+                        Saturday-Sunday:
+                    </li>
+                    <li>
+                        07:00am -11:00 pm
+                    </li>
+                </ul>
+                <p id="last">2021 Gerícht. All Rights reserved.</p>
+
+            </section>
+        </section>
+    </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const MenuItem = document.querySelector('.menuitems');
+        const closeIcon = document.querySelector('.close-icon');
+
+        menu.addEventListener('click', (e) => {
+            MenuItem.style.display = 'block';
+            closeIcon.style.display = 'block';
+            menu.style.display = 'none';
+        });
+
+        closeIcon.addEventListener('click', (e) => {
+            MenuItem.style.display = 'none';
+            closeIcon.style.display = 'none';
+            menu.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
